@@ -1,19 +1,70 @@
 openapi: 3.0.4
 info:
   title: Cloud Counter
-  description: Counter is a simple tool for incrementing, decrementing, and resetting a cloud counter. It returns the current value of the counter.
+  description: >-
+    Counter is a simple tool for incrementing, decrementing, and resetting a
+    cloud counter. It returns the current value of the counter.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
     email: hello@apiverve.com
     url: https://apiverve.com/contact
-  version: 1.0.9
+  version: 1.0.0
 externalDocs:
   description: Learn more about APIVerve
   url: https://docs.apiverve.com?utm_source=openapi
 servers:
-- url: https://api.apiverve.com/
-paths: {}
+  - url: https://api.apiverve.com/
+paths:
+  /v1/counter:
+    get:
+      summary: Get Counter Value
+      description: Get the current value of the counter
+      operationId: counter
+      parameters:
+        - name: id
+          in: query
+          schema:
+            type: string
+          required: true
+          description: The ID of the counter (e.g., test_counter)
+          example: test_counter
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: status
+                  error:
+                    type: string
+                    description: error
+                  data:
+                    type: object
+                    description: data
+              example:
+                status: ok
+                error: null
+                data:
+                  created: '2024-04-26T22:09:46.000Z'
+                  id: test_counter
+                  lastAction: get
+                  lastRead: '2025-12-16T22:21:45.000Z'
+                  lastUpdated: '2024-04-26T22:09:46.000Z'
+                  numberOfDigits: 1
+                  ordinal: zeroth
+                  value: 0
+                  words: zero
+        '401':
+          description: Your request was not authorized, or your API Key was invalid
+        '404':
+          description: Requested resource was not found
+        '500':
+          description: A server error has occurred, try again later
 components:
   securitySchemes:
     api_key:
@@ -21,4 +72,4 @@ components:
       name: x-api-key
       in: header
 security:
-- api_key: []
+  - api_key: []
