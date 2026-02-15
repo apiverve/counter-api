@@ -12,7 +12,6 @@ namespace APIVerve.API.CloudCounter
     {
         /// <summary>
         /// The ID of the counter (e.g., test_counter)
-        /// Example: test_counter
         /// </summary>
         [JsonProperty("id")]
         public string Id { get; set; }
