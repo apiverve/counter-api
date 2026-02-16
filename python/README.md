@@ -224,8 +224,9 @@ from apiverve_cloudcounter.apiClient import CounterAPIClient
 
 api = CounterAPIClient("[YOUR_API_KEY]")
 
+query = { "id": "test_counter" }
+
 try:
-    query = { "id": "test_counter" }
     result = api.execute(query)
     print(result)
 finally:
