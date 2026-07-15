@@ -122,15 +122,19 @@ async function makeRequest() {
   "status": "ok",
   "error": null,
   "data": {
-    "created": "2024-04-26 22:09:46",
+    "created": "2024-04-26T22:09:46.000Z",
     "id": "test_counter",
     "lastAction": "get",
-    "lastRead": "2025-02-20 21:29:46",
-    "lastUpdated": "2024-04-26 22:09:46",
+    "lastRead": "2025-12-16T22:21:45.000Z",
+    "lastUpdated": "2024-04-26T22:09:46.000Z",
     "numberOfDigits": 1,
     "ordinal": "zeroth",
     "value": 0,
-    "words": "zero"
+    "words": "zero",
+    "isEven": true,
+    "isNegative": false,
+    "isZero": true,
+    "isPrime": false
   }
 }
 ```
