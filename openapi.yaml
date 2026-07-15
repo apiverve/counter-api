@@ -59,6 +59,10 @@ paths:
                   ordinal: zeroth
                   value: 0
                   words: zero
+                  isEven: true
+                  isNegative: false
+                  isZero: true
+                  isPrime: false
         '401':
           description: Your request was not authorized, or your API Key was invalid
         '404':
