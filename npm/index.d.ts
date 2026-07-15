@@ -4,24 +4,40 @@ declare module '@apiverve/counter' {
     secure?: boolean;
   }
 
+  /**
+   * Describes fields the current plan does not unlock. Locked fields arrive as null
+   * in `data`; `locked_fields` names them, using dot paths for nested fields.
+   * Absent when the plan unlocks everything.
+   */
+  export interface PremiumInfo {
+    message: string;
+    upgrade_url: string;
+    locked_fields: string[];
+  }
+
   export interface counterResponse {
     status: string;
     error: string | null;
     data: CloudCounterData;
     code?: number;
+    premium?: PremiumInfo;
   }
 
 
   interface CloudCounterData {
-      created:        Date;
-      id:             string;
-      lastAction:     string;
-      lastRead:       Date;
-      lastUpdated:    Date;
-      numberOfDigits: number;
-      ordinal:        string;
-      value:          number;
-      words:          string;
+      created:        Date | null;
+      id:             null | string;
+      lastAction:     null | string;
+      lastRead:       Date | null;
+      lastUpdated:    Date | null;
+      numberOfDigits: number | null;
+      ordinal:        null | string;
+      value:          number | null;
+      words:          null | string;
+      isEven:         boolean | null;
+      isNegative:     boolean | null;
+      isZero:         boolean | null;
+      isPrime:        boolean | null;
   }
 
   export default class counterWrapper {
