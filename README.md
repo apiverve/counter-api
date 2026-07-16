@@ -191,11 +191,40 @@ x-api-key: YOUR_API_KEY_HERE
 Get your API key: [https://apiverve.com](https://apiverve.com)
 
 ### Response Format
-All responses are JSON with this structure:
+
+Every APIVerve endpoint returns the same envelope — check `status`, then read `data`:
+
 ```json
 {
   "status": "ok",
+  "error": null,
   "data": { ... }
+}
+```
+
+### Example Response
+
+A real response from the Cloud Counter API:
+
+```json
+{
+  "status": "ok",
+  "error": null,
+  "data": {
+    "created": "2024-04-26T22:09:46.000Z",
+    "id": "test_counter",
+    "lastAction": "get",
+    "lastRead": "2025-12-16T22:21:45.000Z",
+    "lastUpdated": "2024-04-26T22:09:46.000Z",
+    "numberOfDigits": 1,
+    "ordinal": "zeroth",
+    "value": 0,
+    "words": "zero",
+    "isEven": true,
+    "isNegative": false,
+    "isZero": true,
+    "isPrime": false
+  }
 }
 ```
 
