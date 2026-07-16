@@ -25,12 +25,15 @@ namespace APIVerve.API.CloudCounter
 
         [JsonProperty("data")]
         public Data Data { get; set; }
+
+        [JsonProperty("premium")]
+        public Premium Premium { get; set; }
     }
 
     public partial class Data
     {
         [JsonProperty("created")]
-        public DateTimeOffset Created { get; set; }
+        public DateTimeOffset? Created { get; set; }
 
         [JsonProperty("id")]
         public string Id { get; set; }
@@ -39,21 +42,45 @@ namespace APIVerve.API.CloudCounter
         public string LastAction { get; set; }
 
         [JsonProperty("lastRead")]
-        public DateTimeOffset LastRead { get; set; }
+        public DateTimeOffset? LastRead { get; set; }
 
         [JsonProperty("lastUpdated")]
-        public DateTimeOffset LastUpdated { get; set; }
+        public DateTimeOffset? LastUpdated { get; set; }
 
         [JsonProperty("numberOfDigits")]
-        public long NumberOfDigits { get; set; }
+        public long? NumberOfDigits { get; set; }
 
         [JsonProperty("ordinal")]
         public string Ordinal { get; set; }
 
         [JsonProperty("value")]
-        public long Value { get; set; }
+        public long? Value { get; set; }
 
         [JsonProperty("words")]
         public string Words { get; set; }
+
+        [JsonProperty("isEven")]
+        public bool? IsEven { get; set; }
+
+        [JsonProperty("isNegative")]
+        public bool? IsNegative { get; set; }
+
+        [JsonProperty("isZero")]
+        public bool? IsZero { get; set; }
+
+        [JsonProperty("isPrime")]
+        public bool? IsPrime { get; set; }
+    }
+
+    public partial class Premium
+    {
+        [JsonProperty("message")]
+        public string Message { get; set; }
+
+        [JsonProperty("upgrade_url")]
+        public Uri UpgradeUrl { get; set; }
+
+        [JsonProperty("locked_fields")]
+        public string[] LockedFields { get; set; }
     }
 }
