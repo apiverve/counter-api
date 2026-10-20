@@ -1,13 +1,12 @@
 Cloud Counter API
 ============
 
-Counter is a simple tool for incrementing, decrementing, and resetting a cloud counter. It returns the current value of the counter.
+Cloud Counter stores and updates persistent numeric counters by ID without needing a database. It tracks increments, decrements, and custom values while returning timestamps and number properties like parity and prime status.
 
-![Build Status](https://img.shields.io/badge/build-passing-green)
-![Code Climate](https://img.shields.io/badge/maintainability-B-purple)
-![Prod Ready](https://img.shields.io/badge/production-ready-blue)
 
-This is a Python API Wrapper for the [Cloud Counter API](https://apiverve.com/marketplace/counter?utm_source=pypi&utm_medium=readme)
+[![PyPI version](https://img.shields.io/pypi/v/apiverve-cloudcounter.svg)](https://pypi.org/project/apiverve-cloudcounter/)
+
+This is a Python wrapper for the [Cloud Counter API](https://apiverve.com/marketplace/counter?utm_source=pypi&utm_medium=referral&utm_content=readme)
 
 ---
 
@@ -29,8 +28,8 @@ pip3 install apiverve-cloudcounter
 
 ## Configuration
 
-Before using the counter API client, you have to setup your account and obtain your API Key.
-You can get it by signing up at [https://apiverve.com](https://apiverve.com?utm_source=pypi&utm_medium=readme)
+Before using the Cloud Counter API client, you have to setup your account and obtain your API Key.
+You can get it by signing up at [https://apiverve.com](https://apiverve.com?utm_source=pypi&utm_medium=referral&utm_content=readme)
 
 ---
 
@@ -60,7 +59,7 @@ except Exception as e:
 
 ## Usage
 
-The Cloud Counter API documentation is found here: [https://docs.apiverve.com/ref/counter](https://docs.apiverve.com/ref/counter?utm_source=pypi&utm_medium=readme).
+The Cloud Counter API documentation is found here: [https://docs.apiverve.com/ref/counter](https://docs.apiverve.com/ref/counter?utm_source=pypi&utm_medium=referral&utm_content=readme).
 You can find parameters, example responses, and status codes documented here.
 
 ### Setup
@@ -102,15 +101,19 @@ print(result)
   "status": "ok",
   "error": null,
   "data": {
-    "created": "2024-04-26 22:09:46",
+    "created": "2024-04-26T22:09:46.000Z",
     "id": "test_counter",
     "lastAction": "get",
-    "lastRead": "2025-02-20 21:29:46",
-    "lastUpdated": "2024-04-26 22:09:46",
+    "lastRead": "2025-12-16T22:21:45.000Z",
+    "lastUpdated": "2024-04-26T22:09:46.000Z",
     "numberOfDigits": 1,
     "ordinal": "zeroth",
     "value": 0,
-    "words": "zero"
+    "words": "zero",
+    "isEven": true,
+    "isNegative": false,
+    "isZero": true,
+    "isPrime": false
   }
 }
 ```
@@ -238,7 +241,7 @@ finally:
 
 ## Customer Support
 
-Need any assistance? [Get in touch with Customer Support](https://apiverve.com/contact?utm_source=pypi&utm_medium=readme).
+Need any assistance? [Get in touch with Customer Support](https://apiverve.com/contact?utm_source=pypi&utm_medium=referral&utm_content=readme).
 
 ---
 
@@ -249,12 +252,12 @@ Stay up to date by following [@apiverveHQ](https://twitter.com/apiverveHQ) on Tw
 
 ## Legal
 
-All usage of the APIVerve website, API, and services is subject to the [APIVerve Terms of Service](https://apiverve.com/terms?utm_source=pypi&utm_medium=readme) and all legal documents and agreements.
+All usage of the APIVerve website, API, and services is subject to the [APIVerve Terms of Service](https://apiverve.com/terms?utm_source=pypi&utm_medium=referral&utm_content=readme) and all legal documents and agreements.
 
 ---
 
 ## License
-Licensed under the The MIT License (MIT)
+Licensed under the MIT License (MIT)
 
 Copyright (&copy;) 2026 APIVerve, and EvlarSoft LLC
 
