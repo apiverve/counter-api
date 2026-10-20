@@ -1,7 +1,7 @@
 {
   "name": "@apiverve/counter",
-  "version": "1.2.0",
-  "description": "Counter is a simple tool for incrementing, decrementing, and resetting a cloud counter. It returns the current value of the counter.",
+  "version": "1.2.2",
+  "description": "Cloud Counter stores and updates persistent numeric counters by ID without needing a database. It tracks increments, decrements, and custom values while returning timestamps and number properties like parity and prime status.",
   "main": "index.js",
   "types": "index.d.ts",
   "sideEffects": false,
@@ -23,7 +23,7 @@
     "directory": "npm"
   },
   "keywords": [
-    "counter", "counter api", "counter tool", "counter software", "counter service"
+    "cloud counter api", "persistent counter", "increment counter online", "decrement counter", "track page views"
   ],
   "author": {
     "name": "APIVerve",
@@ -34,7 +34,7 @@
   "bugs": {
     "url": "https://github.com/apiverve/counter-api/issues"
   },
-  "homepage": "https://apiverve.com/marketplace/counter?utm_source=npm&utm_medium=homepage",
+  "homepage": "https://apiverve.com/marketplace/counter?utm_source=npm&utm_medium=referral&utm_content=homepage",
   "devDependencies": {
     "mocha": "^11.0.1",
     "chai": "^5.1.2",
