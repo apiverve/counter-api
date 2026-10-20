@@ -1,13 +1,13 @@
-# [Cloud Counter API](https://apiverve.com/marketplace/counter?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+# [Cloud Counter API](https://apiverve.com/marketplace/counter?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 
-Counter is a simple tool for incrementing, decrementing, and resetting a cloud counter. It returns the current value of the counter.
+Cloud Counter stores and updates persistent numeric counters by ID without needing a database. It tracks increments, decrements, and custom values while returning timestamps and number properties like parity and prime status.
 
 The Cloud Counter API provides a simple, reliable way to integrate cloud counter functionality into your applications. Built for developers who need production-ready cloud counter capabilities without the complexity of building from scratch.
 
-**[View API Details →](https://apiverve.com/marketplace/counter?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)**
+**[View API Details →](https://apiverve.com/marketplace/counter?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://apiverve.com/marketplace/counter?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://apiverve.com/marketplace/counter?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 [![Method](https://img.shields.io/badge/Method-GET-blue.svg)](#)
 [![Platform](https://img.shields.io/badge/Platform-Multi--Platform-orange.svg)](#installation)
 
@@ -161,7 +161,7 @@ go get github.com/apiverve/counter-api/go
 
 ## Documentation
 
-- 🏠 **API Home:** [Cloud Counter API](https://apiverve.com/marketplace/counter?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+- 🏠 **API Home:** [Cloud Counter API](https://apiverve.com/marketplace/counter?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 - 📚 **API Reference:** [docs.apiverve.com/ref/counter](https://docs.apiverve.com/ref/counter)
 - 📖 **OpenAPI Spec:** [openapi.yaml](./openapi.yaml)
 - 💡 **Examples:** [examples/](./examples/)
@@ -232,7 +232,7 @@ A real response from the Cloud Counter API:
 
 ## Support & Community
 
-- 🏠 **API Home**: [Cloud Counter API](https://apiverve.com/marketplace/counter?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+- 🏠 **API Home**: [Cloud Counter API](https://apiverve.com/marketplace/counter?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 - 💬 **Support**: [https://apiverve.com/contact](https://apiverve.com/contact)
 - 🐛 **Issues**: [GitHub Issues](../../issues)
 - 📖 **Documentation**: [https://docs.apiverve.com](https://docs.apiverve.com)

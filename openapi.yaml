@@ -2,8 +2,10 @@ openapi: 3.0.4
 info:
   title: Cloud Counter
   description: >-
-    Counter is a simple tool for incrementing, decrementing, and resetting a
-    cloud counter. It returns the current value of the counter.
+    Cloud Counter stores and updates persistent numeric counters by ID without
+    needing a database. It tracks increments, decrements, and custom values
+    while returning timestamps and number properties like parity and prime
+    status.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
@@ -18,7 +20,7 @@ servers:
 paths:
   /v1/counter:
     get:
-      summary: Get Counter Value
+      summary: Cloud Counter
       description: Get the current value of the counter
       operationId: counter
       parameters:
