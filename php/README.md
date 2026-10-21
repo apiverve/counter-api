@@ -1,6 +1,6 @@
 # Cloud Counter API - PHP Package
 
-Counter is a simple tool for incrementing, decrementing, and resetting a cloud counter. It returns the current value of the counter.
+Cloud Counter stores and updates persistent numeric counters by ID without needing a database. It tracks increments, decrements, and custom values while returning timestamps and number properties like parity and prime status.
 
 ## Installation
 
@@ -93,11 +93,11 @@ $client = new Client(
 
 ## Documentation
 
-For more information, visit the [API Documentation](https://docs.apiverve.com/ref/counter?utm_source=packagist&utm_medium=readme).
+For more information, visit the [API Documentation](https://docs.apiverve.com/ref/counter?utm_source=packagist&utm_medium=referral&utm_content=readme).
 
 ## Support
 
-- Website: [https://apiverve.com/marketplace/counter?utm_source=php&utm_medium=readme](https://apiverve.com/marketplace/counter?utm_source=php&utm_medium=readme)
+- Website: [https://apiverve.com/marketplace/counter?utm_source=php&utm_medium=referral&utm_content=readme](https://apiverve.com/marketplace/counter?utm_source=php&utm_medium=referral&utm_content=readme)
 - Email: hello@apiverve.com
 
 ## License
