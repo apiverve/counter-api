@@ -1,7 +1,7 @@
 {
     "name": "apiverve/counter",
-    "description": "Counter is a simple tool for incrementing, decrementing, and resetting a cloud counter. It returns the current value of the counter.",
-    "version": "1.2.0",
+    "description": "Cloud Counter stores and updates persistent numeric counters by ID without needing a database. It tracks increments, decrements, and custom values while returning timestamps and number properties like parity and prime status.",
+    "version": "1.2.2",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -15,13 +15,13 @@
         "api",
         "apiverve",
         "counter",
-        "counter",
-        "counter api",
-        "counter tool",
-        "counter software",
-        "counter service"
+        "cloud counter api",
+        "persistent counter",
+        "increment counter online",
+        "decrement counter",
+        "track page views"
     ],
-    "homepage": "https://apiverve.com/marketplace/counter?utm_source=php&utm_medium=homepage",
+    "homepage": "https://apiverve.com/marketplace/counter?utm_source=php&utm_medium=referral&utm_content=homepage",
     "support": {
         "email": "hello@apiverve.com",
         "docs": "https://docs.apiverve.com/ref/counter",
