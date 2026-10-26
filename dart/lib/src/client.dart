@@ -46,7 +46,7 @@ final _formatPatterns = {
 
 /// Cloud Counter API client.
 ///
-/// For more information, visit: https://apiverve.com/marketplace/counter?utm_source=dart&utm_medium=readme
+/// For more information, visit: https://apiverve.com/marketplace/counter?utm_source=dart&utm_medium=referral&utm_content=readme
 ///
 /// Parameters:
 /// * [id] (required) - The ID of the counter (e.g., test_counter)

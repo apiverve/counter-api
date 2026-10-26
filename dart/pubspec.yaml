@@ -1,7 +1,7 @@
 name: apiverve_counter
-description: Counter is a simple tool for incrementing, decrementing, and resetting a cloud counter. It returns the current value of the counter.
-version: 1.1.14
-homepage: https://apiverve.com/marketplace/counter?utm_source=dart&utm_medium=homepage
+description: "Cloud Counter stores and updates persistent numeric counters by ID without needing a database. It tracks increments, decrements, and custom values while returning timestamps and number properties like parity and prime status."
+version: 1.2.3
+homepage: https://apiverve.com/marketplace/counter?utm_source=dart&utm_medium=referral&utm_content=homepage
 repository: https://github.com/apiverve/counter-api/tree/main/dart
 
 environment:
