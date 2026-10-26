@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/counter",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Cloud Counter stores and updates persistent numeric counters by ID without needing a database. It tracks increments, decrements, and custom values while returning timestamps and number properties like parity and prime status.",
   "main": "index.js",
   "types": "index.d.ts",
